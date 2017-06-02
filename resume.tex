@@ -1,0 +1,185 @@
+% NOTE: This is very inspired by
+% http://www.toofishes.net/blog/latex-resume-follow-up/
+
+\documentclass[7pt,letterpaper]{article}
+\usepackage[margin=0.75in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[stretch=10]{microtype}
+\usepackage{hyperref}
+\usepackage{tgpagella}
+\usepackage{enumitem}
+\usepackage{indentfirst}
+\pagestyle{empty}
+\newcommand{\dt}{$\cdot$ }
+
+\begin{document}
+\begin{center}
+{\huge Arshia Mufti}
+
+% NOTE: Alternatively could have used \hfill
+
+\href{https://github.com/arshiamufti/}{github.com/arshiamufti}\ \ \textbullet
+\ \ \href{http://arshiamufti.com}{arshiamufti.com}\ \ \textbullet
+\ \ \href{mailto:a2mufti@uwaterloo.ca}{a2mufti@uwaterloo.ca}
+
+\end{center}
+\vspace{-2.0em}
+\subsection*{\sc{{\Large Experience}}}
+\hrule
+\vspace{1.0em}
+  \begin{itemize}
+    \parskip=-0.5em
+  \itemsep0.7em
+
+    \item[]
+    {\href{https://stripe.com}{\textbf{Stripe}} \hfill
+      \emph{May 2017---present}}
+
+    \begin{itemize}[label=\textbullet]
+      \itemsep0em
+      \item Added new features to internal command line Kafka tools \dt Scala 
+        \dt Apache Kafka
+      \item Currently implementing the migration of an internal aggregation
+        service built on top of Summingbird from HDFS to Amazon S3 \dt Scala \dt
+        Twitter Scalding \dt Twitter Summingbird
+    \end{itemize}
+
+    % Bazaarvoice %
+    \item[]
+    {\href{http://www.bazaarvoice.com}{\textbf{Bazaarvoice}} \hfill
+      \emph{September---December 2016}}
+
+    \begin{itemize}[label=\textbullet]
+      \itemsep0em
+      \item Contributed significant changes to the migration of the ad
+        management platform from Maven to SBT, and Cassandra to MySQL \dt Scala
+        \dt SBT \dt Jooq
+      \item Shipped a Q3 feature: exported advertisement statistics and DFP
+        creative, order, and line item data to the ad operations platform to
+        allow for detailed ad conversion analysis \dt Scala \dt Google DFP
+      \item Dockerized external dependencies for local development and
+        integration tests \dt Docker \dt bash
+    \end{itemize}
+
+    % WeMesh
+    \item[]
+    {\href{http://www.rave.io}{\textbf{WeMesh}} \hfill
+      \emph{January---April 2016}}
+
+    \begin{itemize}[label=\textbullet]
+      \itemsep0em
+      \item Designed and implented a new user model---added features enabling
+        users to request friendship, follow or block each other. Rewrote user
+        authentication and login using Firebase \dt Scala \dt Thrift \dt Slick
+      \item Added Vimeo as a content source \dt Clojure \dt Redis
+      \item Integrated Graylog into several microservices to speed up crash
+        analysis and bug fixes.
+    \end{itemize}
+
+    % Waseel
+    \item[]
+    {\href{https://www.wasseel.com}{\textbf{Waseel}} \hfill
+      \emph{May---June 2015}}
+
+    \begin{itemize}[label=\textbullet]
+      \itemsep0em
+      \item Designed an iOS application to allow users to access real-time,
+        location-based data about hospitals \dt Swift
+    \end{itemize}
+    
+    % WiCS
+    \item[]
+    {\href{http://wics.uwaterloo.ca}{\textbf{Women in Computer Science}} \hfill
+      \emph{September---August 2016}}
+
+    \begin{itemize}[label=\textbullet]
+      \itemsep0em
+      \item Publicly represented the committee to external organizations, and
+        developed semesterly budgets.
+      \item Maintained the commitee website, led weekly meeting, developed and
+        promoted the volunteer program.
+    \end{itemize}
+  \end{itemize}
+
+
+\subsection*{\sc{{\Large Education}}}
+\hrule
+\vspace{1.0em}
+  \begin{itemize}
+    \parskip=-0.5em
+  \itemsep0.5em
+
+    \item[]
+      {\href{http://www.uwaterloo.ca}{\textbf{University of Waterloo}}} \dt
+      Bachelor of Computer Science \dt 3.8/4.0 GPA \hfill \emph{2014---2019}
+    \item[]
+      {\href{https://www.ucl.ac.uk/}{\textbf{University College London}}} \dt upcoming exchange student
+      \hfill \emph{September---December 2017}
+
+  \end{itemize}
+
+\subsection*{\sc{{\Large Projects}}}
+\hrule
+\vspace{1.0em}
+  \begin{itemize}
+    \parskip=-0.5em
+  \itemsep0.6em
+
+    \item[]
+      {\href{http://devpost.com/software/baylexa-fv149r}{\textbf{Baylexa}}}
+      \hfill \textbf{\emph{AWS Lambda, Python}}
+      \\
+      Led a team of four to design the winning healthcare app for MHacks V, an
+      Alexa skill aimed at recognizing symptoms of common health conditions,
+      providing basic first aid advice, and scheduling appointments.
+    \item[]
+      \textbf{PawnPusher} \hfill \textbf{\emph{C++}}
+      \\
+      A fully functional chess engine with human and computer modes, involving a
+      graphical display, a history of moves played, and four levels of computer
+      AI that analyse and rank possible opponent moves.
+    \item[]
+      \textbf{Mathrix} \hfill \textbf{\emph{HTML, CSS, Python, Bootstrap}}
+      \\
+      A website for performing common matrix operations. Added material design
+      styles and matrix functions.
+  \end{itemize}
+
+ 
+\subsection*{\sc{{\Large Skills and Interests}}}
+\hrule
+\vspace{1.0em}
+  \begin{itemize}
+    \parskip=-0.5em
+  \itemsep0.5em
+
+    \item[]
+      \textbf{Interests:} Functional programming, distributed systems,
+      performance improvement, database design
+    \item[]
+      \textbf{Languages:} Scala, Clojure, Java, Swift, C, C++, Python, Scheme
+    \item[]
+      \textbf{Tools/Frameworks:} AWS, Unix systems, Google App Engine, Slick,
+      Thrift/Scrooge, SQL, Kafka, Hadoop
+  \end{itemize}
+
+\subsection*{\sc{{\Large Awards}}}
+\hrule
+\vspace{1.0em}
+  \begin{itemize}
+    \parskip=-0.5em
+  \itemsep0.5em
+  \item[]
+    \textbf{WiCS Grace Hopper Scholarship} \hfill \emph{2016}
+  \item[]
+    \textbf{WiCS Grace Hopper Scholarship} \hfill \emph{2015}
+    \item[]
+      \textbf{University of Waterloo President's Scholarship of Distinction} \hfill \emph{2014}
+  \item[]
+    \textbf{City-wide highest grades (Riyadh) for Grade XII examination} ---
+    Final Grade: 96.4\% \hfill \emph{2014}
+    
+  \end{itemize}
+
+\end{document}
