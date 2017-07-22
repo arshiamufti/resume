@@ -1,8 +1,5 @@
-% Template from
-% https://github.com/zmanji/zameermanji.com/blob/master/content/resume.tex
-
-\documentclass[7pt,letterpaper]{article}
-\usepackage[margin=0.75in]{geometry}
+\documentclass[5pt,letterpaper]{article}
+\usepackage[margin=0.5in]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[stretch=10]{microtype}
@@ -15,177 +12,158 @@
 
 \begin{document}
 \begin{center}
-{\huge Arshia Mufti}
+  {\huge Arshia Mufti}
 
-% NOTE: Alternatively could have used \hfill
+  % NOTE: Alternatively could have used \hfill
 
-\href{https://github.com/arshiamufti/}{github.com/arshiamufti}\ \ \textbullet
-\ \ \href{http://arshiamufti.com}{arshiamufti.com}\ \ \textbullet
-\ \ \href{mailto:a2mufti@uwaterloo.ca}{a2mufti@uwaterloo.ca}
+  \href{https://github.com/arshiamufti/}{github.com/arshiamufti}\ \ \textbullet
+  \ \ \href{http://arshiamufti.com}{arshiamufti.com}\ \ \textbullet
+  \ \ \href{mailto:a2mufti@uwaterloo.ca}{a2mufti@uwaterloo.ca}
 
 \end{center}
 \vspace{-2.0em}
 \subsection*{\sc{{\Large Experience}}}
 \hrule
 \vspace{1.0em}
-  \begin{itemize}
-    \parskip=-0.5em
-  \itemsep0.6em
+\begin{itemize}[leftmargin=1em, noitemsep]
 
-    \item[]
+  \item[]
     {\href{https://stripe.com}{\textbf{Stripe}} \hfill
-      \emph{May 2017---present}}
+    \emph{May 2017---present}}
 
-    \begin{itemize}[label=\textbullet]
-      \itemsep0em
+    \begin{itemize}[label=\textbullet, noitemsep, nosep]
       \item Added new features to internal command line Kafka tools \dt Scala 
         \dt Apache Kafka
-      \item Currently implementing the migration of an internal aggregation
-        service built on top of Summingbird from HDFS to Amazon S3 \dt Scala \dt
-        Twitter Scalding \dt Twitter Summingbird
+      \item Fully implemented the migration of an internal aggregation
+        service built on top of Summingbird from HDFS to Amazon S3 \dt Scala
+        \dt Python \dt Twitter Scalding \dt Twitter Summingbird
+      \item \emph{Currently:} Designing/implementing the migration of Stripe
+        API request logs from DynamoDB to Elasticsearch
     \end{itemize}
 
     % Bazaarvoice %
-    \item[]
+  \item[]
     {\href{http://www.bazaarvoice.com}{\textbf{Bazaarvoice}} \hfill
-      \emph{September---December 2016}}
+    \emph{September---December 2016}}
 
-    \begin{itemize}[label=\textbullet]
-      \itemsep0em
-      \item Contributed significant changes to the migration of the ad
-        management platform from Maven to SBT, and Cassandra to MySQL \dt Scala
-        \dt SBT \dt Jooq
+    \begin{itemize}[label=\textbullet, noitemsep, nosep]
+        %\itemsep0em
       \item Shipped a Q3 feature: exported advertisement statistics and DFP
         creative, order, and line item data to the ad operations platform to
         allow for detailed ad conversion analysis \dt Scala \dt Google DFP
+      \item Significantly contributed to the migration of the ad
+        management platform from Cassandra to MySQL
       \item Dockerized external dependencies for local development and
         integration tests \dt Docker \dt bash
     \end{itemize}
 
     % WeMesh
-    \item[]
+  \item[]
     {\href{http://www.rave.io}{\textbf{WeMesh}} \hfill
-      \emph{January---April 2016}}
+    \emph{January---April 2016}}
 
-    \begin{itemize}[label=\textbullet]
-      \itemsep0em
+    \begin{itemize}[label=\textbullet, noitemsep, nosep]
       \item Designed and implented a new user model---added features enabling
-        users to request friendship, follow or block each other. Rewrote user
+        users to request friendship, follow, and block each other. Rewrote user
         authentication and login using Firebase \dt Scala \dt Thrift \dt Slick
       \item Added Vimeo as a content source \dt Clojure \dt Redis
       \item Integrated Graylog into several microservices to speed up crash
-        analysis and bug fixes.
+        analysis and bug fixes
     \end{itemize}
 
     % Waseel
-    \item[]
-    {\href{https://www.wasseel.com}{\textbf{Waseel}} \hfill
-      \emph{May---June 2015}}
+  \item[]
+    {\href{https://www.waseel.com}{\textbf{Waseel}} \hfill
+    \emph{May---June 2015}}
 
-    \begin{itemize}[label=\textbullet]
-      \itemsep0em
+    \begin{itemize}[label=\textbullet, noitemsep]
       \item Designed an iOS application to allow users to access real-time,
         location-based data about hospitals \dt Swift
     \end{itemize}
-    
-    % WiCS
-    \item[]
-    {\href{http://wics.uwaterloo.ca}{\textbf{Women in Computer Science: Chair,
-      Finance Director}} \hfill
-      \emph{September 2015---August 2016}}
 
-    \begin{itemize}[label=\textbullet]
-      \itemsep0em
-      \item Publicly represented the committee to external organizations, and
-        developed semesterly budgets.
-      \item Maintained the commitee website, led weekly meeting, developed and
-        promoted the volunteer program.
-    \end{itemize}
+    % StarCon
+  \item[]
+    {\href{https://starcon.io}{\textbf{StarCon: Founder, Organizer}} \hfill
+    \emph{February 2017---present}}
 
     % MEF
   \item[]
     {\href{https://uwaterloo.ca/math-endowment-fund/}{\textbf{Mathematics
     Endowment Fund: Board Member}} \hfill \emph{June 2017---present}}
-  \end{itemize}
+
+    % Project Alloy
+  \item[]
+    {\href{https://www.projectalloy.org/}{\textbf{Project Alloy: Volunteer}} \hfill
+    \emph{July 2017---present}}
+
+    % WiCS
+  \item[]
+    {\href{http://wics.uwaterloo.ca}{\textbf{Women in Computer Science: Chair,
+      Finance Director}} \hfill
+    \emph{September 2015---August 2016}}
+
+\end{itemize}
 
 
 \subsection*{\sc{{\Large Education}}}
 \hrule
 \vspace{1.0em}
-  \begin{itemize}
-    \parskip=-0.5em
-  \itemsep0.5em
+\begin{itemize}[leftmargin=1em, noitemsep]
+  \item[]
+    {\href{http://www.uwaterloo.ca}{\textbf{University of Waterloo}}} \dt
+    Bachelor of Computer Science \hfill \emph{2014---2019}
+  \item[]
+    {\href{https://www.ucl.ac.uk/}{\textbf{University College London}}} \dt upcoming exchange student
+    \hfill \emph{September---December 2017}
 
-    \item[]
-      {\href{http://www.uwaterloo.ca}{\textbf{University of Waterloo}}} \dt
-      Bachelor of Computer Science \dt 3.8/4.0 GPA \hfill \emph{2014---2019}
-    \item[]
-      {\href{https://www.ucl.ac.uk/}{\textbf{University College London}}} \dt upcoming exchange student
-      \hfill \emph{September---December 2017}
-
-  \end{itemize}
+\end{itemize}
 
 \subsection*{\sc{{\Large Projects}}}
 \hrule
 \vspace{1.0em}
-  \begin{itemize}
-    \parskip=-0.5em
-  \itemsep0.6em
+\begin{itemize}[leftmargin=1em, noitemsep]
+  \item[]
+    {\href{http://devpost.com/software/baylexa-fv149r}{\textbf{Baylexa}}}
+    \hfill \textbf{\emph{AWS Lambda, Python}}
+    \\
+    Led a team of four to design the winning healthcare app for MHacks V, an
+    Alexa skill aimed at recognizing symptoms of common health conditions,
+    providing basic first aid advice, and scheduling appointments.
+  \item[]
+    \textbf{PawnPusher} \hfill \textbf{\emph{C++}}
+    \\
+    A fully functional chess engine with human and computer modes, involving a
+    graphical display, a history of moves played, and four levels of computer
+    AI that analyse and rank possible opponent moves.
+  \item[]
+    \textbf{\href{https://github.com/arshiamufti/tracy}{Tracy}} \hfill \textbf{\emph{Rust}}
+    \\
+    A raytracer that renders dielectric, metallic, and Lambertian surfaces (in progress).
+\end{itemize}
 
-    \item[]
-      {\href{http://devpost.com/software/baylexa-fv149r}{\textbf{Baylexa}}}
-      \hfill \textbf{\emph{AWS Lambda, Python}}
-      \\
-      Led a team of four to design the winning healthcare app for MHacks V, an
-      Alexa skill aimed at recognizing symptoms of common health conditions,
-      providing basic first aid advice, and scheduling appointments.
-    \item[]
-      \textbf{PawnPusher} \hfill \textbf{\emph{C++}}
-      \\
-      A fully functional chess engine with human and computer modes, involving a
-      graphical display, a history of moves played, and four levels of computer
-      AI that analyse and rank possible opponent moves.
-    \item[]
-      \textbf{Mathrix} \hfill \textbf{\emph{HTML, CSS, Python, Bootstrap}}
-      \\
-      A website for performing common matrix operations. Added material design
-      styles and matrix functions.
-  \end{itemize}
 
- 
 \subsection*{\sc{{\Large Skills and Interests}}}
 \hrule
 \vspace{1.0em}
-  \begin{itemize}
-    \parskip=-0.5em
-  \itemsep0.5em
-
-    \item[]
-      \textbf{Interests:} Functional programming, distributed systems,
-      performance improvement, database design
-    \item[]
-      \textbf{Languages:} Scala, Clojure, Java, Swift, C, C++, Python, Scheme
-    \item[]
-      \textbf{Tools/Frameworks:} AWS, Unix systems, Google App Engine, Slick,
-      Thrift/Scrooge, SQL, Kafka, Hadoop
-  \end{itemize}
+\begin{itemize}[leftmargin=1em, noitemsep]
+  \item[]
+    \textbf{Interests:} Functional programming, distributed systems,
+    performance improvement, database design
+  \item[]
+    \textbf{Languages:} Scala, Rust, Ruby, Python, Clojure, Java, Swift, C, C++, Scheme
+  \item[]
+    \textbf{Tools/Frameworks:} AWS, Unix systems, Google App Engine, Slick,
+    Thrift/Scrooge, SQL, Kafka, Hadoop
+\end{itemize}
 
 \subsection*{\sc{{\Large Awards}}}
 \hrule
 \vspace{1.0em}
-  \begin{itemize}
-    \parskip=-0.5em
-  \itemsep0.5em
-  \item[]
-    \textbf{WiCS Grace Hopper Scholarship} \hfill \emph{2016}
-  \item[]
-    \textbf{WiCS Grace Hopper Scholarship} \hfill \emph{2015}
-    \item[]
-      \textbf{University of Waterloo President's Scholarship of Distinction} \hfill \emph{2014}
-  \item[]
-    \textbf{City-wide highest grades (Riyadh) for Grade XII examination} ---
-    Final Grade: 96.4\% \hfill \emph{2014}
-    
-  \end{itemize}
-
+\begin{itemize}[leftmargin=1em, noitemsep]
+  \item[] \textbf{RustConf Scholarship Recipient} \hfill \emph{2017}
+  \item[] \textbf{University of Waterloo President's International Experience Award} \hfill \emph{2017}
+  \item[] \textbf{Waterloo WiCS Grace Hopper Scholarship Recipient} \hfill \emph{2015 \& 2016}
+  \item[] \textbf{University of Waterloo President's Scholarship of Distinction} \hfill \emph{2014}
+  \item[] \textbf{City-wide highest grades (Riyadh) for Grade XII examination} --- Final Grade: 96.4\% \hfill \emph{2014}
+\end{itemize}
 \end{document}
