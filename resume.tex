@@ -32,13 +32,13 @@
     \emph{May 2017---present}}
 
     \begin{itemize}[label=\textbullet, noitemsep, nosep]
-      \item Added new features to internal command line Kafka tools \dt Scala 
-        \dt Apache Kafka
-      \item Fully implemented the migration of an internal aggregation
-        service built on top of Summingbird from HDFS to Amazon S3 \dt Scala
-        \dt Python \dt Twitter Scalding \dt Twitter Summingbird
-      \item \emph{Currently:} Designing/implementing the migration of Stripe
-        API request logs from DynamoDB to Elasticsearch
+      \item Fully implemented the migration of an internal aggregation service
+        from HDFS to S3, removing dependencies on HDFS for persistent data, resulting in easier cluster
+        management \dt Scala \dt Twitter Scalding \dt Twitter Summingbird
+      \item Designed, documented, and implemented an initial migration of Stripe
+        API request logs from DynamoDB to Elasticsearch in order to reduce AWS
+        costs \dt Ruby \dt Elasticsearch
+      \item Added new features to internal command line Kafka tools \dt Scala \dt Apache Kafka
     \end{itemize}
 
     % Bazaarvoice %
@@ -48,9 +48,9 @@
 
     \begin{itemize}[label=\textbullet, noitemsep, nosep]
         %\itemsep0em
-      \item Shipped a Q3 feature: exported advertisement statistics and DFP
-        creative, order, and line item data to the ad operations platform to
-        allow for detailed ad conversion analysis \dt Scala \dt Google DFP
+      \item Exported advertisement statistics and DFP creative, order, and line
+        item data to the ad operations platform to allow for detailed ad
+        conversion analysis \dt Scala \dt Google DFP
       \item Significantly contributed to the migration of the ad
         management platform from Cassandra to MySQL
       \item Dockerized external dependencies for local development and
@@ -66,9 +66,8 @@
       \item Designed and implented a new user model---added features enabling
         users to request friendship, follow, and block each other. Rewrote user
         authentication and login using Firebase \dt Scala \dt Thrift \dt Slick
-      \item Added Vimeo as a content source \dt Clojure \dt Redis
       \item Integrated Graylog into several microservices to speed up crash
-        analysis and bug fixes
+        analysis and bug fixes \dt Clojure
     \end{itemize}
 
     % Waseel
@@ -110,10 +109,9 @@
 \vspace{1.0em}
 \begin{itemize}[leftmargin=1em, noitemsep]
   \item[]
-    {\href{http://www.uwaterloo.ca}{\textbf{University of Waterloo}}} \dt
-    Bachelor of Computer Science \hfill \emph{2014---2019}
+    {\href{http://www.uwaterloo.ca}{\textbf{University of Waterloo}}} \dt Bachelor of Computer Science (co-op) \hfill \emph{2014---2019}
   \item[]
-    {\href{https://www.ucl.ac.uk/}{\textbf{University College London}}} \dt upcoming exchange student
+    {\href{https://www.ucl.ac.uk/}{\textbf{University College London}}} \dt exchange student
     \hfill \emph{September---December 2017}
 
 \end{itemize}
@@ -122,6 +120,16 @@
 \hrule
 \vspace{1.0em}
 \begin{itemize}[leftmargin=1em, noitemsep]
+  \item []
+    \textbf{\href{https://blog.rust-lang.org/2017/06/27/Increasing-Rusts-Reach.html}{Increasing
+    Rust's Reach (2017): Mentee}} \hfill \textbf{\emph{Rust}}
+    \\
+    Building command line tools in Rust to investigate and improve developer
+    experience (in progress).
+  \item[]
+    \textbf{\href{https://github.com/arshiamufti/tracy}{Tracy}} \hfill \textbf{\emph{Rust}}
+    \\
+    A raytracer that renders dielectric, metallic, and Lambertian surfaces (in progress).
   \item[]
     {\href{http://devpost.com/software/baylexa-fv149r}{\textbf{Baylexa}}}
     \hfill \textbf{\emph{AWS Lambda, Python}}
@@ -132,13 +140,8 @@
   \item[]
     \textbf{PawnPusher} \hfill \textbf{\emph{C++}}
     \\
-    A fully functional chess engine with human and computer modes, involving a
-    graphical display, a history of moves played, and four levels of computer
-    AI that analyse and rank possible opponent moves.
-  \item[]
-    \textbf{\href{https://github.com/arshiamufti/tracy}{Tracy}} \hfill \textbf{\emph{Rust}}
-    \\
-    A raytracer that renders dielectric, metallic, and Lambertian surfaces (in progress).
+    A chess engine with human/computer modes, a history of moves played, and
+    four levels of analysis of opponent moves.
 \end{itemize}
 
 
@@ -160,6 +163,7 @@
 \hrule
 \vspace{1.0em}
 \begin{itemize}[leftmargin=1em, noitemsep]
+  \item[] \textbf{StrangeLoop Opportunity Grant Recipient (via Project Alloy)} \hfill \emph{2017}
   \item[] \textbf{RustConf Scholarship Recipient} \hfill \emph{2017}
   \item[] \textbf{University of Waterloo President's International Experience Award} \hfill \emph{2017}
   \item[] \textbf{Waterloo WiCS Grace Hopper Scholarship Recipient} \hfill \emph{2015 \& 2016}
