@@ -26,27 +26,39 @@
 \hrule
 \vspace{1.0em}
 \begin{itemize}[leftmargin=1em, noitemsep]
+   % Google %
+     \item[]
+    {\textbf{Google} \hfill
+    \emph{May 2018---August 2018}}
+    \begin{itemize}[label=\textbullet, noitemsep, nosep]
+      \item Fully designed and implemented stale Spanner reads for CitC (clients in the cloud), reducing p50 latencies for high QPS RPCs in Europe by over 85\%.
+      \item Migrated an authentication client from connecting to servers using specific addresses to using smarter load balancing policies.
+      \item Developed a prober to evaluate the quality of internal code search results and alert on large errors
+    \end{itemize}
+    
+   % DSG %
   \item[]
     {\href{http://dsg.uwaterloo.ca}{\textbf{Data Systems Group, University of
       Waterloo}} \hfill
-    \emph{January 2018---present}}
+    \emph{January---April 2018}}
     \begin{itemize}[label=\textbullet, noitemsep, nosep]
-      \item Currently researching RDMA under the supervision of Bernard Wong and
-        Kenneth Salem
+      \item Developed a testing and evaluation framework for RaMP, an RDMA-based in-memory cache.
+        \item Contributed to the corresponding research paper, presented at USENIX HotCloud 2018: {\href{https://www.usenix.org/biblio-1798}{usenix.org/biblio-1798}}
     \end{itemize}
 
+   % Stripe %
   \item[]
     {\href{https://stripe.com}{\textbf{Stripe}} \hfill
     \emph{May 2017---August 2017}}
 
     \begin{itemize}[label=\textbullet, noitemsep, nosep]
-      \item Fully implemented the migration of an internal aggregation service
+      \item Fully implemented the migration of an internal time series aggregation service
         from HDFS to S3, removing dependencies on HDFS for persistent data, resulting in easier cluster
-        management \dt Scala \dt Twitter Scalding \dt Twitter Summingbird
+        management \dt Twitter Scalding \dt Twitter Summingbird
       \item Designed, documented, and implemented an initial migration of Stripe
         API request logs from DynamoDB to Elasticsearch in order to reduce AWS
-        costs \dt Ruby \dt Elasticsearch
-      \item Added new features to internal command line Kafka tools \dt Scala \dt Apache Kafka
+        costs
+      \item Added new features to internal command line Kafka tools
     \end{itemize}
 
     % Bazaarvoice %
@@ -58,11 +70,9 @@
         %\itemsep0em
       \item Exported advertisement statistics and DFP creative, order, and line
         item data to the ad operations platform to allow for detailed ad
-        conversion analysis \dt Scala \dt Google DFP
-      \item Significantly contributed to the migration of the ad
+        conversion analysis
+      \item Contributed to the design and migration of an internal ad
         management platform from Cassandra to MySQL
-      \item Dockerized external dependencies for local development and
-        integration tests \dt Docker \dt bash
     \end{itemize}
 
     % WeMesh
@@ -73,40 +83,35 @@
     \begin{itemize}[label=\textbullet, noitemsep, nosep]
       \item Designed and implented a new user model---added features enabling
         users to request friendship, follow, and block each other. Rewrote user
-        authentication and login using Firebase \dt Scala \dt Thrift \dt Slick
+        authentication and login using Firebase
       \item Integrated Graylog into several microservices to speed up crash
-        analysis and bug fixes \dt Clojure
+        analysis and bug fixes
     \end{itemize}
-
-    % Waseel
-  \item[]
-    {\href{https://www.waseel.com}{\textbf{Waseel}} \hfill
-    \emph{May---June 2015}}
-
-    \begin{itemize}[label=\textbullet, noitemsep]
-      \item Designed an iOS application to allow users to access real-time,
-        location-based data about hospitals \dt Swift
-    \end{itemize}
-
-    % CSC
-  \item[]
-    {\href{https://csclub.uwaterloo.ca}{\textbf{Computer Science Club, Secretary}} \hfill
-    \emph{January 2018---present}}
 
     % StarCon
   \item[]
     {\href{https://starcon.io}{\textbf{StarCon: Founder, Organizer}} \hfill
     \emph{February 2017---present}}
-
+    
+    % Rust Community Team
+    \item[]
+    {\href{https://rustbridge.github.io/}{\textbf{RustBridge Community Team: Teacher}} \hfill
+    \emph{January 2018---present}}
+    
+    % CSC
+  \item[]
+    {\href{https://csclub.uwaterloo.ca}{\textbf{Computer Science Club, Secretary}} \hfill
+    \emph{January---April 2018}}
+    
     % MEF
   \item[]
     {\href{https://uwaterloo.ca/math-endowment-fund/}{\textbf{Mathematics
-    Endowment Fund: Board Member}} \hfill \emph{June 2017---present}}
+    Endowment Fund: Board Member}} \hfill \emph{June 2017---April 2018}}
 
     % Project Alloy
   \item[]
     {\href{https://www.projectalloy.org/}{\textbf{Project Alloy: Volunteer}} \hfill
-    \emph{July 2017---present}}
+    \emph{July---December 2018}}
 
     % WiCS
   \item[]
@@ -121,7 +126,7 @@
 \vspace{1.0em}
 \begin{itemize}[leftmargin=1em, noitemsep]
   \item[]
-    {\href{http://www.uwaterloo.ca}{\textbf{University of Waterloo}}} \dt Bachelor of Computer Science (co-op) \hfill \emph{2014---2019}
+    {\href{http://www.uwaterloo.ca}{\textbf{University of Waterloo}}} \dt Bachelor of Computer Science (honours, co-op) \hfill \emph{2014---2019}
   \item[]
     {\href{https://www.ucl.ac.uk/}{\textbf{University College London}}} \dt exchange student
     \hfill \emph{September---December 2017}
@@ -134,21 +139,14 @@
 \begin{itemize}[leftmargin=1em, noitemsep]
   \item []
     \textbf{\href{https://blog.rust-lang.org/2017/06/27/Increasing-Rusts-Reach.html}{Increasing
-    Rust's Reach (2017): Mentee}} \hfill \textbf{\emph{Rust}}
+    Rust's Reach 2017: Mentee}} \hfill \textbf{\emph{Rust}}
     \\
     Building command line tools in Rust to investigate and improve developer
-    experience (in progress).
+    experience.
   \item[]
     \textbf{\href{https://github.com/arshiamufti/tracy}{Tracy}} \hfill \textbf{\emph{Rust}}
     \\
     A raytracer that renders dielectric, metallic, and Lambertian surfaces (in progress).
-  \item[]
-    {\href{http://devpost.com/software/baylexa-fv149r}{\textbf{Baylexa}}}
-    \hfill \textbf{\emph{AWS Lambda, Python}}
-    \\
-    Led a team of four to design the winning healthcare app for MHacks V, an
-    Alexa skill aimed at recognizing symptoms of common health conditions,
-    providing basic first aid advice, and scheduling appointments.
   \item[]
     \textbf{DNiSe} \hfill \textbf{\emph{Python}}
     \\
@@ -163,22 +161,18 @@
 \begin{itemize}[leftmargin=1em, noitemsep]
   \item[]
     \textbf{Interests:} Functional programming, distributed systems,
-    performance improvement, database design
+    performance improvement, database design, the Linux kernel
   \item[]
-    \textbf{Languages:} Scala, Rust, Ruby, Python, Clojure, Java, Swift, C, C++, Scheme
-  \item[]
-    \textbf{Tools/Frameworks:} AWS, Unix systems, Google App Engine, Slick,
-    Thrift/Scrooge, SQL, Kafka, Hadoop
+    \textbf{Languages/Tools:} Scala, Go, C++, Rust, Ruby, Clojure, proto3, Kafka, Docker, Elasticsearch, Thrift
 \end{itemize}
 
 \subsection*{\sc{{\Large Awards}}}
 \hrule
 \vspace{1.0em}
 \begin{itemize}[leftmargin=1em, noitemsep]
+  \item[] \textbf{University of Waterloo President's Research Award} \hfill \emph{2018}
   \item[] \textbf{StrangeLoop Opportunity Grant Recipient (via Project Alloy)} \hfill \emph{2017}
   \item[] \textbf{RustConf Scholarship Recipient} \hfill \emph{2017}
   \item[] \textbf{University of Waterloo President's International Experience Award} \hfill \emph{2017}
-  \item[] \textbf{Waterloo WiCS Grace Hopper Scholarship Recipient} \hfill \emph{2015 \& 2016}
-  \item[] \textbf{University of Waterloo President's Scholarship of Distinction} \hfill \emph{2014}
 \end{itemize}
 \end{document}
